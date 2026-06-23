@@ -1,7 +1,8 @@
-const API = "http://localhost:4401/api/orders";
+const API =
+  "https://real-time-order-processing-system.onrender.com/api/orders";
 
-const WS = "ws://localhost:4401/ws";
-
+const WS =
+  "wss://real-time-order-processing-system.onrender.com/ws";
 const socket = new WebSocket(WS);
 
 /* ---------- FORM ---------- */
