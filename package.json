@@ -1,0 +1,18 @@
+{
+  "name": "zomato-swiggy-distributed-order-processing-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zomato/Swiggy-style distributed order processing simulation.",
+  "scripts": {
+    "dev:backend": "node --watch backend/src/server.js",
+    "start:backend": "node backend/src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.24.1",
+    "uuid": "^11.1.1",
+    "ws": "^8.18.0"
+  }
+}

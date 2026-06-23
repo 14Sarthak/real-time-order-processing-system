@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Pipeline</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div>
+
+<h1>🍽️ Order Pipeline</h1>
+
+<p>Distributed Food Delivery System</p>
+
+</div>
+
+<div class="online">
+
+<span class="green-dot"></span>
+
+System Online
+
+</div>
+
+</header>
+
+
+<!-- 2 x 2 DASHBOARD -->
+
+<div class="dashboard">
+
+
+<!-- PLACE ORDER -->
+
+<section class="card" id="place-order">
+
+<h2>Place Order</h2>
+
+<form id="orderForm">
+
+<label>Customer Name</label>
+
+<input
+id="customerInput"
+type="text"
+placeholder="Enter customer name"
+required
+>
+
+<label>Restaurant</label>
+
+<select id="restaurantInput">
+
+<option>Urban Tandoor</option>
+
+<option>Burger Hub</option>
+
+<option>Pizza Nation</option>
+
+<option>The Food Court</option>
+
+</select>
+
+<label>Food Item</label>
+
+<input
+id="foodInput"
+type="text"
+placeholder="Enter food item"
+required
+>
+
+<label>Estimated Amount</label>
+
+<input
+id="amountInput"
+type="number"
+placeholder="499"
+required
+>
+
+<button type="submit">
+
+Place Order
+
+</button>
+
+</form>
+
+</section>
+
+
+<!-- ACTIVE ORDER -->
+
+<section class="card" id="active-order">
+
+<h2>Active Order</h2>
+
+<div class="active-order">
+
+<p>
+
+<strong>Order ID</strong>
+
+<span id="orderId">
+
+No Order
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Customer</strong>
+
+<span id="customerName">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Restaurant</strong>
+
+<span id="restaurantName">
+
+-
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Driver</strong>
+
+<span id="driverName">
+
+Waiting...
+
+</span>
+
+</p>
+
+<p>
+
+<strong>Status</strong>
+
+<span id="orderStatus">
+
+No Order
+
+</span>
+
+</p>
+
+</div>
+
+
+<div class="progress">
+
+<div
+class="progress-fill"
+id="progressFill">
+
+</div>
+
+</div>
+
+
+<div class="timeline">
+
+<div id="stage1">
+
+🟢 Order Placed
+
+</div>
+
+<div id="stage2">
+
+⚪ Restaurant Accepted
+
+</div>
+
+<div id="stage3">
+
+⚪ Driver Assigned
+
+</div>
+
+<div id="stage4">
+
+⚪ Picked Up
+
+</div>
+
+<div id="stage5">
+
+⚪ Delivered
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NEAREST DRIVERS -->
+
+<section class="card" id="drivers">
+
+<h2>Nearest Drivers</h2>
+
+<div class="driver">
+
+<span>🟢 Rohit</span>
+
+<span>Bike • 0.8 km</span>
+
+</div>
+
+<div class="driver">
+
+<span>🟢 Imran</span>
+
+<span>Scooter • 1.4 km</span>
+
+</div>
+
+<div class="driver">
+
+<span>🟢 Neha</span>
+
+<span>Bike • 2.1 km</span>
+
+</div>
+
+<div class="driver">
+
+<span>🟢 Vikram</span>
+
+<span>EV • 2.7 km</span>
+
+</div>
+
+<div class="driver">
+
+<span>🟢 Sara</span>
+
+<span>Bike • 3.0 km</span>
+
+</div>
+
+</section>
+
+
+<!-- LIVE TRACKING -->
+
+<section class="card" id="tracking">
+
+<h2>Live Tracking</h2>
+
+<p class="tracking-subtitle">
+
+Live route updates
+
+</p>
+
+<div class="tracking-area">
+
+<div class="track-line"></div>
+
+<div class="point restaurant">
+
+🏪
+
+</div>
+
+<div id="bike">
+
+🛵
+
+</div>
+
+<div class="point customer">
+
+🏠
+
+</div>
+
+</div>
+
+<div class="labels">
+
+<span>Restaurant</span>
+
+<span></span>
+
+<span>Customer</span>
+
+</div>
+
+<div class="tracking-status">
+
+<span id="trackingText">
+
+Waiting for an order...
+
+</span>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- FULL WIDTH EVENT FLOW -->
+
+<section class="card flow">
+
+<h2>Event Flow</h2>
+
+<p class="flow-subtitle">
+
+How an order moves through the distributed system
+
+</p>
+
+<div class="pipeline">
+
+<div id="flow1">
+
+Order Service
+
+</div>
+
+<div id="flow2">
+
+Kafka
+
+</div>
+
+<div id="flow3">
+
+Restaurant
+
+</div>
+
+<div id="flow4">
+
+Driver
+
+</div>
+
+<div id="flow5">
+
+Notification
+
+</div>
+
+</div>
+
+</section>
+
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
