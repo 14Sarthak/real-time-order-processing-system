@@ -17,7 +17,7 @@ https://real-time-order-processing-system.onrender.com
 ---
 
 
-# 📸 Screenshots
+# 📸 Preview
 
 ## Dashboard
 
