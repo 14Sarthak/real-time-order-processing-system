@@ -24,13 +24,8 @@ A real-time food delivery order processing system inspired by platforms like Zom
 
 ## 🎥 Demo Video
 
-> Upload your `demo.mp4` by dragging it into this README on GitHub and replace this line with the generated link.
+https://github.com/user-attachments/assets/4d2a4b4f-927b-4a66-b439-5fcd45e447c7
 
-Example:
-
-https://github.com/user-attachments/assets/your-video-link
-
----
 
 ## ✨ Features
 
