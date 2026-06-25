@@ -4,26 +4,26 @@ A real-time food delivery order processing system inspired by platforms like Zom
 
 ---
 
-# 🚀 Live Demo
+## 🚀 Live Demo
 
 https://real-time-order-processing-system.vercel.app
 
 ---
 
 
-# 📸 Preview
+## 📸 Preview
 
-## Dashboard
+### Dashboard
 
 ![Dashboard](assets/dashboard.png)
 
-## Live Tracking
+### Live Tracking
 
 ![Live Tracking](assets/live-tracking.png)
 
 ---
 
-# 🎥 Demo Video
+## 🎥 Demo Video
 
 
 
@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/f8710c5f-843a-4ab2-a43d-81d485d64d8e
 ---
 
 
-# 🏗️ System Architecture
+## 🏗️ System Architecture
 
 ```text
 User Places Order
@@ -70,7 +70,7 @@ Service         Service
 
 ---
 
-# ⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 | Layer                   | Technology                  |
 | ----------------------- | --------------------------- |
@@ -83,7 +83,7 @@ Service         Service
 
 ---
 
-# ✨ Features
+## ✨ Features
 
 * Real-time food order placement
 * Live order status updates
@@ -98,7 +98,7 @@ Service         Service
 ---
 
 
-# 🚀 Run Locally
+## 🚀 Run Locally
 
 Clone the repository:
 
@@ -136,7 +136,7 @@ frontend/index.html
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 real-time-order-processing-system/
@@ -168,7 +168,7 @@ real-time-order-processing-system/
 
 ---
 
-# 💡 Future Improvements
+## 💡 Future Improvements
 
 * Integrate Apache Kafka for real event streaming
 * Add Redis Geospatial Search for nearest-driver matching
