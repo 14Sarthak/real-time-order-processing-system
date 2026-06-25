@@ -1,69 +1,112 @@
 # 🍽️ Real-Time Order Processing System
 
-A real-time food delivery order processing system inspired by platforms like Zomato and Swiggy. The project simulates the complete order lifecycle, including order placement, restaurant acceptance, driver assignment, live tracking, and delivery updates using WebSockets and MongoDB.
+A real-time food delivery order processing system inspired by platforms like Zomato and Swiggy. The project simulates the complete order lifecycle—from order placement to delivery—using an event-driven architecture, WebSockets, and MongoDB. It demonstrates how independent backend services can process orders asynchronously while providing live updates to the frontend.
 
-## 🌐 Live Demo
-
-**Frontend:** https://real-time-order-processing-system.vercel.app
-
-**Backend:** https://real-time-order-processing-system.onrender.com
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://real-time-order-processing-system.vercel.app)
+[![Backend](https://img.shields.io/badge/Backend-Render-blue)](https://real-time-order-processing-system.onrender.com)
 
 ---
 
-## 📸 Screenshots
+# 🏗️ System Architecture
 
-### Dashboard
+```text
+User Places Order
+        │
+        ▼
+Frontend Dashboard
+(HTML • CSS • JavaScript)
+        │
+        ▼
+Express REST API
+        │
+        ▼
+MongoDB Atlas
+(Order Storage)
+        │
+        ▼
+Order Processing Pipeline
+        │
+ ┌──────┼─────────────┐
+ ▼      ▼             ▼
+Restaurant      Driver Assignment
+Service         Service
+                │
+                ▼
+         Notification Service
+                │
+                ▼
+        WebSocket Server
+                │
+                ▼
+     Live Dashboard Updates
+```
+
+---
+
+# ⚙️ Tech Stack
+
+| Layer                   | Technology                  |
+| ----------------------- | --------------------------- |
+| Frontend                | HTML, CSS, JavaScript       |
+| Backend                 | Node.js, Express.js         |
+| Database                | MongoDB Atlas               |
+| Real-Time Communication | WebSockets                  |
+| Deployment              | Vercel, Render              |
+| Architecture            | Event-Driven Order Pipeline |
+
+---
+
+# ✨ Features
+
+* Real-time food order placement
+* Live order status updates
+* Driver assignment simulation
+* Restaurant order processing simulation
+* Notification service simulation
+* WebSocket-based live dashboard updates
+* MongoDB Atlas for persistent order storage
+* Responsive two-column dashboard
+* Deployed on Vercel and Render
+
+---
+
+# 📸 Screenshots
+
+## Dashboard
 
 ![Dashboard](assets/dashboard.png)
 
-### Live Tracking
+## Live Tracking
 
 ![Live Tracking](assets/live-tracking.png)
 
 ---
 
-## 🎥 Demo Video
+# 🎥 Demo Video
 
-https://github.com/user-attachments/assets/4d2a4b4f-927b-4a66-b439-5fcd45e447c7
-
-
-## ✨ Features
-
-- Place food orders
-- Real-time order status updates
-- Live delivery tracking
-- Automatic driver assignment
-- WebSocket-based communication
-- MongoDB Atlas integration
-- Distributed order processing simulation
+> Replace this section with the GitHub-generated video link after uploading your demo.
 
 ---
 
-## 📂 Project Structure
+# 🚀 Live Demo
 
-```text
-real-time-order-processing-system
-│
-├── assets
-│   ├── dashboard.png
-│   └── live-tracking.png
-│
-├── backend
-├── frontend
-│
-├── README.md
-├── package.json
-└── .gitignore
-```
+**Frontend**
+
+https://real-time-order-processing-system.vercel.app
+
+**Backend**
+
+https://real-time-order-processing-system.onrender.com
 
 ---
 
-## ⚙️ Run Locally
+# 🚀 Run Locally
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/14Sarthak/real-time-order-processing-system.git
+cd real-time-order-processing-system
 ```
 
 Install dependencies:
@@ -72,11 +115,11 @@ Install dependencies:
 npm install
 ```
 
-Create `backend/.env`:
+Create `backend/.env`
 
 ```env
 PORT=4401
-MONGO_URI=your_mongodb_uri
+MONGO_URI=your_mongodb_connection_string
 CLIENT_ORIGIN=http://127.0.0.1:5500
 ORDER_STAGE_DELAY_MS=2500
 ```
@@ -87,6 +130,59 @@ Start the backend:
 npm run dev:backend
 ```
 
-Open `frontend/index.html` using Live Server.
+Start the frontend using **VS Code Live Server** by opening:
+
+```text
+frontend/index.html
+```
 
 ---
+
+# 📂 Project Structure
+
+```text
+real-time-order-processing-system/
+│
+├── assets/
+│   ├── dashboard.png
+│   └── live-tracking.png
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── models/
+│   │   ├── realtime/
+│   │   ├── repositories/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── app.js
+│   │   └── server.js
+│
+├── frontend/
+│   ├── index.html
+│   ├── styles.css
+│   └── app.js
+│
+├── package.json
+├── .gitignore
+└── README.md
+```
+
+---
+
+# 💡 Future Improvements
+
+* Integrate Apache Kafka for real event streaming
+* Add Redis Geospatial Search for nearest-driver matching
+* Use Google Maps for live route visualization
+* Split services into independent microservices
+* Add user authentication and restaurant management
+
+---
+
+# 👨‍💻 Author
+
+**Sarthak Jain**
+
+IIT Kharagpur
+
