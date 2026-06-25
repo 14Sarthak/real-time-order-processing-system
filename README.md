@@ -2,10 +2,43 @@
 
 A real-time food delivery order processing system inspired by platforms like Zomato and Swiggy. The project simulates the complete order lifecycle—from order placement to delivery—using an event-driven architecture, WebSockets, and MongoDB. It demonstrates how independent backend services can process orders asynchronously while providing live updates to the frontend.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://real-time-order-processing-system.vercel.app)
-[![Backend](https://img.shields.io/badge/Backend-Render-blue)](https://real-time-order-processing-system.onrender.com)
+---
+
+# 🚀 Live Demo
+
+**Frontend**
+
+https://real-time-order-processing-system.vercel.app
+
+**Backend**
+
+https://real-time-order-processing-system.onrender.com
 
 ---
+
+
+# 📸 Screenshots
+
+## Dashboard
+
+![Dashboard](assets/dashboard.png)
+
+## Live Tracking
+
+![Live Tracking](assets/live-tracking.png)
+
+---
+
+# 🎥 Demo Video
+
+
+
+https://github.com/user-attachments/assets/f8710c5f-843a-4ab2-a43d-81d485d64d8e
+
+
+
+---
+
 
 # 🏗️ System Architecture
 
@@ -70,39 +103,6 @@ Service         Service
 
 ---
 
-# 📸 Screenshots
-
-## Dashboard
-
-![Dashboard](assets/dashboard.png)
-
-## Live Tracking
-
-![Live Tracking](assets/live-tracking.png)
-
----
-
-# 🎥 Demo Video
-
-
-
-https://github.com/user-attachments/assets/f8710c5f-843a-4ab2-a43d-81d485d64d8e
-
-
-
----
-
-# 🚀 Live Demo
-
-**Frontend**
-
-https://real-time-order-processing-system.vercel.app
-
-**Backend**
-
-https://real-time-order-processing-system.onrender.com
-
----
 
 # 🚀 Run Locally
 
@@ -183,10 +183,4 @@ real-time-order-processing-system/
 * Add user authentication and restaurant management
 
 ---
-
-# 👨‍💻 Author
-
-**Sarthak Jain**
-
-IIT Kharagpur
 
