@@ -6,13 +6,7 @@ A real-time food delivery order processing system inspired by platforms like Zom
 
 # 🚀 Live Demo
 
-**Frontend**
-
 https://real-time-order-processing-system.vercel.app
-
-**Backend**
-
-https://real-time-order-processing-system.onrender.com
 
 ---
 
